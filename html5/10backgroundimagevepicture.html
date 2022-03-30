@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Baackgroundimage ve Picture</title>
+    <style>
+        body{
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <p style="color: blue;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione minima nostrum repellendus alias veritatis laudantium quaerat? Atque illo ea eaque sit necessitatibus iure, aperiam exercitationem inventore quo omnis voluptatem delectus!</p>
+
+    <picture>
+        <source media="(min-width: 850px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbGQRO0pFhNpoc_5mUhjO64xqqb8PLsK_yrg&usqp=CAU">
+        <source media="(min-width: 650px)" srcset="img/OpYdBdFe.jpeg">
+        <source media="(min-width: 250px)" srcset="https://www.hobisi.com/wp-content/uploads/2019/05/resim-nedir-turleri-ve-stilleri.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbGQRO0pFhNpoc_5mUhjO64xqqb8PLsK_yrg&usqp=CAU">
+    </picture>
+</body>
+</html>

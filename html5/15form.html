@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Form</title>
+</head>
+<body>
+    
+    <form action="#">
+        <fieldset>
+            <legend>İsim Bilgileri</legend>
+
+            <label for="ad">Adınızı Girin:</label>
+            <input type="text" id="ad" name="ad"><br></br>
+    
+            <label for="soyad">Soyadınızı Girin:</label>
+            <input type="text" id="soyad" name="soyad"><br></br>
+
+            <label for="kız">Varsa kız arkdaşınızın adı:</label>
+            <input type="text" id="kız" name="kız"><br><br>
+
+            <label for="il">Şehir Gİrin:</label>
+            <input list="Sehirler" id="il" name="il">
+            <datalist id="Sehirler">
+                <option value="Bursa">
+                <option value="İstanbul">
+                <option value="Antalya">
+                <option value="İzmir">
+            </datalist>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Diğer Bilgiler</legend>
+
+            <input type="radio" name="cinsiyet" value="erkek" id="erkek">
+            <label for="erkek">Erkek</label>
+
+            <input type="radio" name="cinsiyet" value="kadın" id="kadın">
+            <label for="kadın">Kadın</label>
+
+            <br><br>
+            <input type="checkbox" name="chbmavi" id="mavi" value="mavi" checked = "checked">
+            <label for="mavi">Mavi</label>
+
+            <input type="checkbox" name="chbyeşil" id="yeşil" value="yeşil">
+            <label for="yeşil">Yeşil</label>
+
+            <input type="checkbox" name="chbturuncu" id="Turuncu" value="Turuncu">
+            <label for="Turuncu">Turuncu</label>
+        </fieldset>
+
+        
+        <br><br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Formu Sil">
+        <input type="button" onclick="alert('Merhaba')" value="Normal bir buton">
+
+        <br>
+        <br>
+        <label for="arabalar">Favori Markanız</label>
+        <select name="arabalar" id="arabalar">
+            <option value="honda">Honda</option>
+            <option value="reno">Reno</option>
+            <option selected value="audi">Audi</option>
+            <option value="hundai">Hundai</option>
+        </select>
+        
+        <br><br>
+
+        <label for="adres">Adresiniz</label>
+        <textarea name="adres" id="adres" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <button type="buton">Yeni Buton</button>
+    </form>
+
+    <!--İnputtaki buton ile direkt buton arasında ki fark buttonun içine resim vs koyabiliyoruz ama inputdaki butona js kodu yazabiliyoruz-->
+</body>
+</html>

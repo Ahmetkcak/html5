@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Listeler</title>
+    <style>  
+        #Menu{
+            list-style-type: none;   
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        #Menu li{
+            padding-left: 20px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!--Sayılarla liste yapmak için kullanılır-->
+    <ol>
+        <li>Sevde</li>
+        <li>Kevser</li>
+        <li>İlayda</li>
+    </ol>
+
+    <ol type="A">
+        <li>Sevde</li>
+        <li>Kevser</li>
+        <li>İlayda</li>
+    </ol>
+
+
+    <ol type="a">
+        <li>Sevde</li>
+        <li>Kevser</li>
+        <li>İlayda</li>
+    </ol>
+
+    <ol type="i">
+        <li>Sevde</li>
+        <li>Kevser</li>
+        <li>İlayda</li>
+    </ol>
+
+    <br>
+    <hr>
+    <br>
+
+    <ul id="Menu">
+        <li>Anasayfa</li>
+        <li>Hakkımızda</li>
+        <li>İletişim</li>
+    </ul>
+
+
+   <!--Şekillerle liste oluşturmak için kullanılır-->
+    <ul style="list-style-type: disc">
+        <li>Ahmet</li>
+        <li>Ali</li>
+        <li>Mehmet</li>
+    </ul>
+
+    <ul style="list-style-type: square">
+        <li>Ahmet</li>
+        <li>Ali</li>
+        <li>Mehmet</li>
+    </ul>
+
+    <ul style="list-style-type: circle">
+        <li>Ahmet</li>
+        <li>Ali</li>
+        <li>Mehmet</li>
+    </ul>
+
+    <ul style="list-style-type: none">
+        <li>Ahmet</li>
+        <li>Ali
+            <ul>
+                <li>Yafeshan</li>
+                <li>Ömer</li>
+            </ul>
+        </li>
+        <li>Mehmet</li>
+    </ul>   
+</body>
+</html>
